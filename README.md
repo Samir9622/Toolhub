@@ -2,66 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ToolHub - All-in-One Utility Tools</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToolHub</title>
+  <style>
+    body { font-family: sans-serif; background: #f8fafa; margin: 0; padding: 0; text-align: center; }
+    .container { padding: 20px; }
+    h1 { color: #2d60d1; }
+    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 20px; }
+    .card {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 20px;
+      width: 240px;
+      text-align: left;
+      transition: transform 0.2s ease;
+    }
+    .card:hover { transform: scale(1.05); }
+    a { text-decoration: none; color: #2d60d1; font-weight: bold; }
+    p { color: #555; }
+    footer { margin-top: 40px; font-size: 14px; color: gray; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="text-center p-6 bg-white shadow-md">
-    <h1 class="text-3xl font-bold text-blue-700">ToolHub</h1>
-    <p class="text-sm text-gray-600">All-in-One Utility Tools at Your Fingertips</p>
-  </header>
+<body>
+  <div class="container">
+    <h1>ToolHub</h1>
+    <p>All-in-One Utility Tools at Your Fingertips</p>
 
-  <main class="max-w-6xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Image Compressor -->
-      <a href="compressor.html" class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold text-blue-600">Image Compressor</h2>
-        <p class="text-sm text-gray-600">Reduce image size without losing quality.</p>
+    <div class="grid">
+      <a class="card" href="image-compressor/index.html">
+        <div>Image Compressor</div>
+        <p>Reduce image size without losing quality.</p>
       </a>
-
-      <!-- Calculator -->
-      <a href="calculator.html" class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold text-blue-600">Online Calculator</h2>
-        <p class="text-sm text-gray-600">Perform quick and accurate calculations.</p>
+      <a class="card" href="calculator/index.html">
+        <div>Online Calculator</div>
+        <p>Perform quick and accurate calculations.</p>
       </a>
-
-      <!-- Stopwatch -->
-      <a href="stopwatch.html" class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold text-blue-600">Stopwatch & Timer</h2>
-        <p class="text-sm text-gray-600">Track time precisely for any task.</p>
+      <a class="card" href="stopwatch/index.html">
+        <div>Stopwatch & Timer</div>
+        <p>Track time precisely for any task.</p>
       </a>
-
-      <!-- QR Code Generator -->
-      <a href="qr-generator.html" class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold text-blue-600">QR Code Generator</h2>
-        <p class="text-sm text-gray-600">Generate QR codes for links, text, and more.</p>
+      <a class="card" href="qr-generator/index.html">
+        <div>QR Code Generator</div>
+        <p>Generate QR codes for links, text, and more.</p>
       </a>
-
-      <!-- Text Converter -->
-      <a href="text-converter.html" class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold text-blue-600">Text Case Converter</h2>
-        <p class="text-sm text-gray-600">Convert text to UPPERCASE, lowercase, etc.</p>
+      <a class="card" href="text-case/index.html">
+        <div>Text Case Converter</div>
+        <p>Convert text to UPPERCASE, lowercase, etc.</p>
       </a>
-
-      <!-- Password Generator -->
-      <a href="password-generator.html" class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold text-blue-600">Password Generator</h2>
-        <p class="text-sm text-gray-600">Create secure, random passwords easily.</p>
+      <a class="card" href="password-generator/index.html">
+        <div>Password Generator</div>
+        <p>Create secure, random passwords easily.</p>
       </a>
-
-      <!-- Unit Converter -->
-      <a href="unit-converter.html" class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold text-blue-600">Unit Converter</h2>
-        <p class="text-sm text-gray-600">Convert length, weight, temperature, and more.</p>
+      <a class="card" href="unit-converter/index.html">
+        <div>Unit Converter</div>
+        <p>Convert length, weight, temperature, and more.</p>
       </a>
-
+      <a class="card" href="color-picker/index.html">
+        <div>Color Picker</div>
+        <p>Select and copy hex color codes easily.</p>
+      </a>
+      <a class="card" href="word-counter/index.html">
+        <div>Word Counter</div>
+        <p>Count words, characters, and lines in a text.</p>
+      </a>
     </div>
-  </main>
 
-  <footer class="text-center p-6 text-gray-500 text-sm">
-    &copy; 2025 ToolHub by Samir Dey. All rights reserved.
-  </footer>
+    <footer>
+      © 2025 ToolHub by Samir Dey. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
